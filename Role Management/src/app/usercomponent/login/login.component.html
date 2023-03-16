@@ -1,0 +1,15 @@
+
+<div class="container" >
+	<div class="form-container">
+		<form class="my-form " #loginForm="ngForm"(ngSubmit)="LoginUser(loginForm)">
+			<h1 class="my-heading">Login</h1>
+			<label class="my-form-text">Email</label>
+			<input class="my-input" type="email"  [(ngModel)]="emailAndPass.email" name="email"/>
+			<label class="my-form-text">Password</label>
+			<input class="my-input"  type="password" [(ngModel)]="emailAndPass.password" name="password"/>
+			<a href="#">Forgot your password?</a>
+			<button type="submit">Sign In</button>
+		</form>
+	</div>
+	
+</div>
