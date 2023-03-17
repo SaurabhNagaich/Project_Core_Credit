@@ -1,0 +1,54 @@
+<app-sidenav></app-sidenav>
+<div class="my-cont">
+  <div class="my-url">
+    <div class="navbar row my-secondheader ">
+      <div class="col-10">Home / Create Role</div>
+      <div class="col-2">Logout</div>
+    </div>
+
+  </div>
+  <mat-horizontal-stepper class="genral-form">
+    <form>
+
+      <mat-step label="General" state="phone">
+        <app-general></app-general>
+        <div>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+
+      <mat-step label="Permissions" state="chat">
+        <app-permissions></app-permissions>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+      <mat-step label="Additional Controls" state="chat">
+        <app-additional></app-additional>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Next</button>
+        </div>
+      </mat-step>
+
+      <mat-step label="Access Controls">
+        <app-accesscontrol></app-accesscontrol>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext>Summit</button>
+        </div>
+      </mat-step>
+
+      <!-- Icon overrides. -->
+      <ng-template matStepperIcon="phone">
+        <mat-icon>call_end</mat-icon>
+      </ng-template>
+
+      <ng-template matStepperIcon="chat">
+        <mat-icon>forum</mat-icon>
+      </ng-template>
+    </form>
+  </mat-horizontal-stepper>
+
+</div>
