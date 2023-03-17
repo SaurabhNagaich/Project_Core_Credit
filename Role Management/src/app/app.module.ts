@@ -12,7 +12,10 @@ import { DashboardComponent } from './usercomponent/dashboard/dashboard.componen
 import { RoledashboardComponent } from './rolecomponents/roledashboard/roledashboard.component';
 import { AddroleComponent } from './rolecomponents/addrole/addrole.component';
 import { UpdateroleComponent } from './rolecomponents/updaterole/updaterole.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatStepperModule} from '@angular/material/stepper';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatFormFieldModule} from '@angular/material/form-field';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +33,11 @@ import { UpdateroleComponent } from './rolecomponents/updaterole/updaterole.comp
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    ReactiveFormsModule ,
+    MatFormFieldModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
